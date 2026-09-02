@@ -1,0 +1,26 @@
+✓ Lockfile passes supply-chain policies (verified 15m ago)
+Lockfile is up to date, resolution step is skipped
+Already up to date
+
+. prepare$ husky
+. prepare: Done
+.../node_modules/onnxruntime-node postinstall$ node ./script/install
+.../esbuild@0.27.1/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.27.2/node_modules/esbuild postinstall$ node install.js
+.../node_modules/protobufjs postinstall$ node scripts/postinstall
+.../sharp@0.34.5/node_modules/sharp install$ node install/check.js || npm run build
+.../node_modules/protobufjs postinstall: Done
+.../sharp@0.34.5/node_modules/sharp install: Done
+.../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+.../node_modules/onnxruntime-node postinstall: Done
+.../esbuild@0.25.12/node_modules/esbuild postinstall$ node install.js
+.../node_modules/@parcel/watcher install: Done
+.../.pnpm/re2@1.22.3/node_modules/re2 install$ install-from-cache --artifact build/Release/re2.node --host-var RE2_DOWNLOAD_MIRROR --skip-path-var RE2_DOWNLOAD_SKIP_PATH --skip-ver-var RE2_DOWNLOAD_SKIP_VER || node-gyp -j max rebuild
+.../esbuild@0.27.1/node_modules/esbuild postinstall: Done
+.../.pnpm/re2@1.22.3/node_modules/re2 install: Trying https://github.com/uhop/node-re2/releases/download/1.22.3/win32-x64-127.br ...
+.../esbuild@0.27.2/node_modules/esbuild postinstall: Done
+.../esbuild@0.25.12/node_modules/esbuild postinstall: Done
+.../.pnpm/re2@1.22.3/node_modules/re2 install: Writing to build/Release/re2.node ...
+.../.pnpm/re2@1.22.3/node_modules/re2 install: Done.
+.../.pnpm/re2@1.22.3/node_modules/re2 install: Done
+Done in 9.4s using pnpm v11.25.0
