@@ -14,6 +14,12 @@ cover: /img/cover/1.webp
 description: 个人网站搭建与开源学习资源。
 ---
 
+## NovelAgent 小说创作智能体
+
+参与长篇小说创作智能体开发，V2 提交包含情绪章节规划、写作技能集成、前端配置与运行状态展示。当前 V2 PR 为草稿，尚未合并。
+
+[项目详情与个人贡献](/post/novel-agent) · [V2 PR](https://github.com/Tongtron/NovelAgent/pull/1)
+
 ## 前端作品集网站
 
 基于 astro-koharu 主题定制的个人作品集，以作品展示为首页核心，保留文章、分类、标签与搜索功能。

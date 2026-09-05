@@ -23,11 +23,19 @@ const path = (value: string) => localizedPath(value, locale);
     <div class="strip"><div class="wrap"><span>FRONT-END</span><span>WEB EXPERIENCE</span><span>OPEN SOURCE</span><span>LEARNING BY BUILDING</span></div></div>
     <section class="wrap work" id="work" aria-labelledby="work-title">
       <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">作品与实践<span>。</span></h2></div><a class="textlink" href={path('/categories/project')}>所有项目 ↗</a></div>
+      <article class="project novel-project">
+        <div class="novel-diagram" aria-label="小说创作工作流：创作方案、章节规划、正文写作、审校修订、记忆更新">
+          <p class="eyebrow">NOVELAGENT / 01</p><h3>让一个想法，<br/>成为持续生长的故事。</h3>
+          <ol><li>创作方案</li><li>章节规划</li><li>正文写作</li><li>审校与修订</li><li>记忆更新</li></ol>
+          <p class="novel-caption">自主长篇小说创作工作流</p>
+        </div>
+        <div class="project-copy"><p class="eyebrow">AI 智能体 · V2 开发实践</p><h3>NovelAgent<br/>小说创作智能体</h3><p>从题材与核心想法出发，串联章节规划、正文写作、审校修订和人物记忆更新。我的 V2 提交补充写作技能集成、前端配置与运行状态展示。</p><ul class="tags" aria-label="项目技术"><li>Python</li><li>JavaScript</li><li>SQLite</li><li>DeepSeek</li></ul><p class="novel-status">V2 草稿 PR · 尚未合并</p><a class="textlink" href={path('/post/novel-agent')}>查看项目与贡献 <span>↗</span></a></div>
+      </article>
       <article class="project">
-        <a class="project-image" href={path('/post/astro-portfolio')} aria-label="阅读前端作品集网站项目"><img src="/img/cover/3.webp" alt="前端作品集项目封面" width="960" height="640" loading="lazy"/><span class="image-label">PERSONAL WEBSITE / 01</span></a>
+        <a class="project-image" href={path('/post/astro-portfolio')} aria-label="阅读前端作品集网站项目"><img src="/img/cover/3.webp" alt="前端作品集项目封面" width="960" height="640" loading="lazy"/><span class="image-label">PERSONAL WEBSITE / 02</span></a>
         <div class="project-copy"><p class="eyebrow">网站搭建 · 主题定制</p><h3>一个属于自己的<br/>作品展示空间</h3><p>基于 astro-koharu 主题搭建个人站点，将项目介绍、技术记录与开源链接整理在一起，用 GitHub Actions 完成自动构建与发布。</p><ul class="tags" aria-label="项目技术"><li>Astro</li><li>TypeScript</li><li>Tailwind CSS</li><li>GitHub Pages</li></ul><a class="textlink" href={path('/post/astro-portfolio')}>查看项目过程 <span>↗</span></a></div>
       </article>
-      <a class="repository" href="https://github.com/1011-wyl/pikachu" target="_blank" rel="noopener noreferrer"><span class="repo-number">02</span><div><p class="eyebrow">开源学习资源</p><h3>Pikachu · Web 安全靶场</h3><p>仓库中的开源漏洞练习项目，查看项目说明与源码。</p></div><span class="repo-arrow" aria-hidden="true">↗</span></a>
+      <a class="repository" href="https://github.com/1011-wyl/pikachu" target="_blank" rel="noopener noreferrer"><span class="repo-number">03</span><div><p class="eyebrow">开源学习资源</p><h3>Pikachu · Web 安全靶场</h3><p>仓库中的开源漏洞练习项目，查看项目说明与源码。</p></div><span class="repo-arrow" aria-hidden="true">↗</span></a>
     </section>
     <section class="about-section" id="about"><div class="wrap about-grid"><div><p class="eyebrow">02 / ABOUT ME</p><h2>在实践里，<br/>慢慢长出自己的答案。</h2></div><div><p class="about-lead">我是 WYL，正在记录自己的前端学习与项目实践。</p><p>从搭建这个网站开始，把每一次尝试整理成可以回看的作品：为什么这样选择、如何实现，以及下一次可以做得更好的地方。</p><a class="textlink" href={path('/about')}>更多关于我 ↗</a></div></div></section>
     <section class="wrap journal"><div><p class="eyebrow">03 / BUILDING NOTES</p><h2>不只展示结果，<br/>也留下过程。</h2></div><a class="journal-link" href={path('/archives')}><span>项目记录与文章归档</span><span aria-hidden="true">↗</span></a></section>
@@ -39,4 +47,5 @@ const path = (value: string) => localizedPath(value, locale);
 :global(body:has(.portfolio) #site-header){background:#fbfcfff2;color:#192239;text-shadow:none;border-bottom:1px solid #dde2ec}:global(.dark .portfolio){--ink:#edf0f8;--muted:#aeb8cb;--paper:#151c2c;--line:#354157;--accent:#f396ba}:global(.dark .portfolio .about-section){background:#1d273a}:global(.dark body:has(.portfolio) #site-header){background:#151c2cf2;color:#edf0f8;border-color:#354157}
 @media(max-width:800px){.wrap{width:calc(100% - 40px)}.hero{grid-template-columns:1fr;padding-block:100px 50px;gap:40px}.visual{margin-left:20px}.visual>img{height:320px}.note{left:-20px;bottom:75px}.strip .wrap{flex-wrap:wrap;justify-content:center;font-size:12px}.project,.about-grid,.journal{grid-template-columns:1fr;gap:28px}.work{padding-block:50px}.project-image img{height:280px}.section-heading{gap:16px}.section-heading .textlink{font-size:14px}.repository{gap:16px}.repository h3{font-size:18px}.repository p{font-size:14px}.about-section{padding-block:50px}.journal{padding-block:50px}.portfolio-footer{flex-wrap:wrap}.eyebrow{margin-bottom:16px}.project-copy h3{font-size:26px}}
 @media(prefers-reduced-motion:reduce){a,.project-image img{transition:none}}
+.novel-project{margin-bottom:60px}.novel-diagram{background:#202a42;color:#f2f5ff;border-radius:8px;padding:36px}.novel-diagram h3{font-size:28px;line-height:1.5;font-weight:650}.novel-diagram ol{list-style:none;padding:0;margin:26px 0;display:flex;flex-wrap:wrap;gap:10px}.novel-diagram li{font-size:14px;border:1px solid #71829d;padding:6px 10px;border-radius:4px}.novel-diagram li:not(:last-child)::after{content:" →";color:#f3b3cd}.novel-caption{font-size:14px;color:#bac6db}.novel-status{font-size:14px}@media(max-width:800px){.novel-diagram{padding:24px}.novel-diagram h3{font-size:24px}}
 </style>
