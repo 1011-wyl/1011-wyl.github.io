@@ -17,7 +17,7 @@ site:
   name: WYL # 作者名称
   description: 个人作品集，记录前端项目与技术实践 # 网站描述
   avatar: /img/avatar.webp # 网站头像
-  showLogo: true # 是否显示 Logo
+  showLogo: false # 是否显示 Logo
   author: WYL # 作者名称
   url: https://1011-wyl.github.io # 站点 URL 用于 RSS 和 SEO
   defaultOgImage: /img/avatar.webp # 默认 Open Graph 图片
@@ -161,10 +161,6 @@ social:
     url: https://github.com/1011-wyl # 替换为你的 GitHub 链接
     icon: ri:github-fill # Remix Icon 的 GitHub 图标
     color: '#191717' # (可选) 图标颜色
-  email:
-    url: mailto:your@email.com # 替换为你的邮箱，需加 mailto: 前缀
-    icon: ri:mail-line
-    color: '#55acd5'
   rss:
     url: /rss.xml # 站内 RSS 订阅地址
     icon: ri:rss-line

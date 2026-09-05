@@ -1,5 +1,5 @@
 ---
-title: 开源项目一览
+title: 项目与开源实践
 link: projects
 catalog: true
 date: 2026-09-02 00:00:00
@@ -11,28 +11,21 @@ tags:
 categories:
   - 项目
 cover: /img/cover/1.webp
-description: 整理目前的主要开源项目，持续更新中。
+description: 个人网站搭建与开源学习资源。
 ---
 
-这里是我的开源项目与技术实践汇总，也是我秋招作品集的核心内容。
+## 前端作品集网站
 
-> 提示：本文是占位模板，请替换为你的真实项目清单，并给每个项目单独创建一篇文章，附上技术难点、解决思路与在线链接。
+基于 astro-koharu 主题定制的个人作品集，以作品展示为首页核心，保留文章、分类、标签与搜索功能。
 
-## 项目列表
+- 项目技术：Astro、TypeScript、Tailwind CSS。
+- 内容管理：Markdown 与 YAML 配置。
+- 发布方式：GitHub Actions 构建，GitHub Pages 托管。
+- [查看实现过程](/post/astro-portfolio)
+- [查看源码](https://github.com/1011-wyl/1011-wyl.github.io)
 
-### 1. 前端作品集网站
+## 开源学习资源：Pikachu
 
-- 技术栈：Astro · TypeScript · Tailwind CSS · GitHub Actions
-- 项目链接：本网站
-- 亮点：基于 astro-koharu 主题定制，静态输出、性能优异，支持分类 / 标签 / 全站搜索
+仓库中的 Pikachu 是一个用于学习常见 Web 漏洞的开源靶场，原项目由开源作者开发。这里作为学习资源列出，不作为个人原创作品。
 
-### 2. （待补充项目）
-
-- 技术栈：待补充
-- 项目链接：待补充
-- 亮点：待补充
-
-## 更新计划
-
-- 持续补充项目文章与技术笔记
-- 每篇项目文章包含：背景、技术选型、难点与解决、量化成果
+[查看仓库与原项目说明](https://github.com/1011-wyl/pikachu)
