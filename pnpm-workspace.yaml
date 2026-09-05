@@ -5,3 +5,5 @@ allowBuilds:
   protobufjs: true
   re2: true
   sharp: true
+  # Optional process-priority addon; not required for the static site build.
+  nice-napi: false
